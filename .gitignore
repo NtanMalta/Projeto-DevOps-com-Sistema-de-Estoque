@@ -1,0 +1,26 @@
+# Ambientes Virtuais Python (MUITO IMPORTANTE)
+venv/
+env/
+.venv/
+
+# Ficheiros da Base de Dados SQLite (Não enviar a base de dados para o repositório!)
+*.db
+*.sqlite3
+estoque.db
+
+# Ficheiros compilados do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Configurações de Editores de Código (VS Code, PyCharm, etc.)
+.vscode/
+.idea/
+
+# Ficheiros do Sistema Operativo
+.DS_Store
+Thumbs.db
+
+# Ficheiros de variáveis de ambiente (onde guardaria senhas no futuro)
+.env
