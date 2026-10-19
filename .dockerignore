@@ -1,0 +1,21 @@
+# Ambientes virtuais
+venv/
+env/
+.venv/
+
+# Ficheiros Python compilados
+__pycache__/
+*.pyc
+*.pyo
+
+# Ficheiros do banco de dados local
+*.db
+*.sqlite3
+estoque.db
+
+# Diretórios de repositório e configurações
+.git/
+.github/
+.gitignore
+.vscode/
+.env
