@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+    api:
+        build: .
+        image: api-estoque:latest
+        container_name: api-estoque-server
+        ports:
+            - "80:8000"
+        restart: always
+        volumes:
+            - estoque_data:/app/data
+volumes:
+    estoque_data:
