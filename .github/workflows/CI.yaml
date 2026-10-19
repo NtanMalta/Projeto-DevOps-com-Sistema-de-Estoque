@@ -1,0 +1,24 @@
+name: CI - Integraçao Continua
+
+on:
+    pull_request:
+        branches:
+            - main
+    push:
+        branches-ignore:
+            - main
+
+jobs:
+    validate-and-test:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout do codigo
+              uses: actions/checkout@v4            
+            
+            - name: testar cmpilaçao do imagem docker
+              uses: docker/build-push-action@v5
+              with:
+                context: .
+                
+                push: false
